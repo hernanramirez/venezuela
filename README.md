@@ -27,8 +27,7 @@ Asegurate de tener instalado virtualenv (http://www.virtualenv.org). Si ya lo ti
 Clona el proyecto
 =================
 
-To create a new Django project called '**icecream**' using
-django-twoscoops-project, run the following command::
+Ejecuta el siguiente comando::
 
     $ git clone https://github.com/hernanramirez/venezuela.git
 
