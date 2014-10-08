@@ -52,5 +52,7 @@ Por hacer
 Tengo en mente hacer la base de datos de Venezuela con `Banderas, escudos y mapa`_.
 
 .. _`Java Script`: De autocompletado estado, municipio y parroquia
+
 .. _`Banderas y escudos`: completar cada estado, municipio y parroquia con banderas y escudos
+
 .. _`Generar con geodjango mapas`: completar cada estado, municipio y parroquia mapas
