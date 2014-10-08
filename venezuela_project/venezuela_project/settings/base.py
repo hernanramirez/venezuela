@@ -58,10 +58,10 @@ DATABASES = {
 
 ########## GENERAL CONFIGURATION
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#time-zone
-TIME_ZONE = 'America/Los_Angeles'
+TIME_ZONE = 'America/Caracas'
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#language-code
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es-ve'
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#site-id
 SITE_ID = 1
@@ -194,6 +194,7 @@ DJANGO_APPS = (
 
 # Apps specific for this project go here.
 LOCAL_APPS = (
+    'estados_app',
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
