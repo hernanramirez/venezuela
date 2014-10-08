@@ -1,72 +1,32 @@
-========================
-django-twoscoops-project
-========================
+Venezuela
+=========
 
-A project template for Django 1.6 (with a tag for Django 1.5).
+Es un proyecto desarrollado con Django 1.6 (con a tag de Django 1.5).
 
-To use this project follow these steps:
+El proyecto en su fase inicial es para tener la base de datos de Estados, Municipio y parroquias de venezuela
 
-#. Create your working environment
-#. Install Django
-#. Create the new project using the django-two-scoops template
-#. Install additional dependencies
 
-*note: these instructions show creation of a project called "icecream".  You
-should replace this name with the actual name of your project.*
+Sobre la base de datos
+======================
 
-What about Django 1.7 (or higher)?
-==================================
+Inicialmente la base de datos fue recopilada por José A. Rodriguez E. publicada en su blog:
 
-This project is meant to be paired with the Two Scoops of Django, which stop at 1.6. Since this is the case, we won't be upgrading this project for upcoming releases of Django.
+* http://josearodrigueze.wordpress.com/2013/04/23/bd-pais-estado-municipio-parroquia/
 
-If you are looking for cutting edge Django templates, we recommend:
+Luego la base de datos fue importada al formato json para que pueda ser utilizada con Django desde cualquier base de datos.
 
-* https://github.com/pydanny/cookiecutter-django
-* https://github.com/luzfcb/cookiecutter-django-oauth
 
-These (and many others) are powered by cookiecutter_, which is an awesome tool by Audrey Roy, who happens to be one of the co-authors of Two Scoops of Django.
+Para ejecutar el proyecto con virtual env
+=========================================
 
-.. _cookiecutter: https://github.com/audreyr/cookiecutter
+Virtualenv
+----------
 
-Working Environment
-===================
+Asegurate de tener instalado virtualenv (http://www.virtualenv.org). Si ya lo tienes instalado ejecuta::
 
-You have several options in setting up your working environment.  We recommend
-using virtualenv to separate the dependencies of your project from your system's
-python environment.  If on Linux or Mac OS X, you can also use virtualenvwrapper to help manage multiple virtualenvs across different projects.
+    $ virtualenv venv_venezuela
 
-Virtualenv Only
----------------
-
-First, make sure you are using virtualenv (http://www.virtualenv.org). Once
-that's installed, create your virtualenv::
-
-    $ virtualenv icecream
-
-You will also need to ensure that the virtualenv has the project directory
-added to the path. Adding the project directory will allow `django-admin.py` to
-be able to change settings using the `--settings` flag.
-
-Virtualenv with virtualenvwrapper
-------------------------------------
-
-In Linux and Mac OSX, you can install virtualenvwrapper (http://virtualenvwrapper.readthedocs.org/en/latest/),
-which will take care of managing your virtual environments and adding the
-project path to the `site-directory` for you::
-
-    $ mkdir icecream
-    $ mkvirtualenv -a icecream icecream-dev
-    $ cd icecream && add2virtualenv `pwd`
-
-Using virtualenvwrapper with Windows
-----------------------------------------
-
-There is a special version of virtualenvwrapper for use with Windows (https://pypi.python.org/pypi/virtualenvwrapper-win).::
-
-    > mkdir icecream
-    > mkvirtualenv icecream-dev
-    > add2virtualenv icecream
-
+Luego
 
 Installing Django
 =================
@@ -75,51 +35,41 @@ To install Django in the new virtual environment, run the following command::
 
     $ pip install django
 
-Creating your project
-=====================
+
+Clona el proyecto
+=================
 
 To create a new Django project called '**icecream**' using
 django-twoscoops-project, run the following command::
 
-    $ django-admin.py startproject --template=https://github.com/twoscoops/django-twoscoops-project/archive/master.zip --extension=py,rst,html icecream_project
+    $ git clone https://github.com/hernanramirez/venezuela.git
 
-For Django 1.5 users, we recommend::
 
-    $ django-admin.py startproject --template=https://github.com/twoscoops/django-twoscoops-project/archive/1.5.zip --extension=py,rst,html icecream_project
-
-Installation of Dependencies
-=============================
+Instala las dependencias
+========================
 
 Depending on where you are installing dependencies:
 
-In development::
+Para desarrollo::
 
     $ pip install -r requirements/local.txt
 
-For production::
+Para producción::
 
     $ pip install -r requirements.txt
 
-*note: We install production requirements this way because many Platforms as a
-Services expect a requirements.txt file in the root of projects.*
+Por hacer
+=========
 
-Follows Best Practices
-======================
-
-.. image:: http://twoscoops.smugmug.com/Two-Scoops-Press-Media-Kit/i-C8s5jkn/0/O/favicon-152.png
-   :name: Two Scoops Logo
+.. image:: http://laprimeraplana.com.mx/wp-content/uploads/2013/04/10-cosas-por-hacer-cada-d%C3%ADa-de-trabajo.jpg
+   :name: Por hacer
    :align: center
-   :alt: Two Scoops of Django
-   :target: http://twoscoopspress.org/products/two-scoops-of-django-1-6
+   :alt: Por hacer
+   :target: http://laprimeraplana.com.mx
 
-This project follows best practices as espoused in `Two Scoops of Django: Best Practices for Django 1.6`_.
+Tengo en mente hacer la base de datos de Venezuela con `Banderas, escudos y mapa`_.
 
-.. _`Two Scoops of Django: Best Practices for Django 1.6`: http://twoscoopspress.org/products/two-scoops-of-django-1-6
+.. _`Java Script`: De autocompletado estado, municipio y parroquia
+.. _`Banderas y escudos`: completar cada estado, municipio y parroquia con banderas y escudos
+.. _`Generar con geodjango mapas`: completar cada estado, municipio y parroquia mapas
 
-Acknowledgements
-================
-
-- Many thanks to Randall Degges for the inspiration to write the book and django-skel.
-- All of the contributors_ to this project.
-
-.. _contributors: https://github.com/twoscoops/django-twoscoops-project/blob/master/CONTRIBUTORS.txt
