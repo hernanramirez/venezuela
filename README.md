@@ -1,7 +1,7 @@
 Venezuela
 =========
 
-Es un proyecto desarrollado con Django 1.6 (con a tag de Django 1.5).
+Es un proyecto desarrollado con Django 1.6 (con tag de Django 1.5).
 
 El proyecto en su fase inicial es para tener la base de datos de Estados, Municipio y parroquias de venezuela
 
